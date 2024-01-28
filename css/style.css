@@ -198,18 +198,59 @@ a {
 }
 
 .service {
-    height: 460px;
-    width: 31%;
-    background-color: var(--back-color);
+    height: 590px;
+    width: 30%;
+    background-color: #ffffff;
     border-radius: var(--radius);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     margin-bottom: 60px;
+    box-shadow: 10px 10px 40px 10px var(--back-color);
+   /* border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--back-color) 6px, var(--back-color) 15px, transparent 16px, transparent 20px) 20/1rem; */
 }
+
+/*.service__text {
+    margin: 15px;
+    line-height: 22px;
+    color: black;
+  } */
+  
+  .service__name {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 20px;
+      color: var(--main-color);
+     text-decoration: underline;
+  }
+  
+
+.service__contain {
+     margin-left: 10px;
+    display: flex;
+}
+
+/*
+  .service__description {
+      font-size: 16px;
+      margin-top: 10px;
+  } */
+  
 
 .service:nth-child(n+2) {
    margin-left: 40px;
+}
+
+.service__item {
+    text-align: left;
+    color: var(--main-color);
+    font-weight: 700;
+    margin: 20px;
+  /*  background-color: var(--back-color);
+    border-radius: 9899px;
+    padding: 6px 6px; */
 }
 
 .service__foto {
@@ -218,16 +259,46 @@ a {
     background-color: #ffffff;
     margin-top: 20px;
     border-radius: 5px;
+    opacity: 0.7;
 }
 
+.service__foto:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    cursor: pointer;
+} 
+
+.bento {
+    background-image: url("../img/bento.jpg");
+    background-size: cover;
+    background-position: 0% 45%;
+}
 .cake {
     background-image: url("../img/cake1.jpg");
     background-size: cover;
-    background-position: 0% 30%;
+    background-position: 0% 40%;
 }
 
-.pop {
+.stepcake {
+    background-image: url("../img/stepcake.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+.cupcake {
     background-image: url("../img/cake.jpg");
+    background-size: cover;
+    background-position: 0% 70%;
+}
+
+.pops {
+    background-image: url("../img/pops.jpg");
+    background-size: cover;
+    background-position: -10% 60%;
+}
+
+.zefir {
+    background-image: url("../img/zefir.jpg");
     background-size: cover;
     background-position: 0% 70%;
 }
@@ -237,29 +308,19 @@ a {
     background-size: cover;
     background-position: 0% 30%;
 }
-.service__text {
-  padding: 15px;
-  line-height: 22px;
-  text-align: center;
-  color: black;
+
+.cruass {
+    background-image: url("../img/cruass.jpg");
+    background-size: cover;
+    background-position: 0% 30%;
 }
 
-.service__name {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-
+.cakemeat {
+    background-image: url("../img/meat.jpg");
+    background-size: cover;
+    background-position: 0% 30%;
 }
 
-.service__description {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.service__items {
-    padding-top: 10px;
-    line-height: 22px;
-}
 
 .service__btn {
     height: 40px;
@@ -307,12 +368,17 @@ a {
 
 .delivery__photo, .order__photo {
     width: 30%;
-    height: 220px;
+    height: 180px;
     background-color: var(--back-color);
-    margin: 20px;
+    margin:20px;
+    padding-top: 40px;
 }
 
 .deliveryph {
+    background-color: #ffffff;   
+}
+
+.orderph {
     background-color: #ffffff;
 }
 
@@ -326,6 +392,11 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+
+.delivery__description, .order__description {
+    margin-top: 20px;
+    color: #000000;
 }
 
 .reviews {
